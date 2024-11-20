@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+
+    font-family:'Space mono';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: rgb(75, 223, 243);
+}
+
+.search {
+    position: relative;
+    height: 50px;
+}
+
+
+.search .input {
+    background-color: #ffffff;
+    border: 6px solid rgb(36, 40, 38);
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: 'space mono';
+    padding: 15px;
+    height: 80px;
+    width: 80px;
+    transition: width 0.3s ease;
+    background-image: none;
+  }
+
+.btn {
+    background-color: #fbfbfb;
+    border: 6px solid hsl(30, 6%, 7%);
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    transition: transform 0.5s ease;
+}
+
+.btn:focus .input:focus{
+    outline: none;
+}
+
+.search.active .input{
+    width: 200px;
+    /* transform: translateX(198px) */
+}
+
+.search.active .btn{
+    /* transform: translateY(198px); */
+    position: relative;
+}
+
+.search:hover input {
+    width: 450px;
+    transform: translate(80px);
+}
+
+
+
+
+
