@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Space mono';
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+     /* vh- viewport height , takes the entire height of the browser */
+    overflow: hidden;
+    background: url('https://plus.unsplash.com/premium_photo-1681208068652-f3d8e1e52005?q=80&w=3444&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-color: rgb(29, 106, 106);
+    color: aliceblue;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 6px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container a {
+    text-decoration: none;
+    color: rgb(169, 238, 8);
+}
+
+.form-control {
+    position: relative;
+    margin: 60px 0 60px;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 4px solid rgba(243, 246, 246, 0.753); 
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(242, 237, 237);
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+    outline: 0;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px ;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: rgba(231, 219, 219, 0.5);
+    transform: translateY(-35px);   
+    transition: 0.3s cubic-bezier(0.68, -0.75, 0.265, 1.55); 
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: rgb(164, 223, 242);
+    padding: 15px ;
+    font-family: inherit;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+
+}
+.btn.active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 40px;
+}
+
+.footer{
+    font-family: inherit;
+    font-size: 20px;
+    position: absolute;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgb(164, 223, 242);
+    right: 30px; 
+    top: 90%;
+}
+
