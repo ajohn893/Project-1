@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Space mono';
+    background-color: rgba(142, 152, 158, 0.865);
+
+}
+
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.faq {
+    background-color: rgba(234, 241, 244, 0.629);
+    border-radius: 10px ;
+    border: 1px solid #060101;
+    padding: 30px;
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    
+}
+
+.faq.active {
+    background-color: rgba(139, 199, 199, 0.629);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5), 0px 3px 6px rgba(0, 0, 0, 0.6), 0px 3px 6px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.faq.active::before, .faq.active::after{
+    content: '\f21b';
+    font-family: 'Font Awesome 5 Free';
+    color: #171b21;
+    font-size: 5rem;
+    position: absolute;
+    opacity: 0.3;
+    top: 60px;
+    left: 500px;
+    z-index: 0;
+}
+
+.faq.active::before {
+    color: rgb(23, 22, 22) ;
+    top: 20px;
+    left: 20px;
+    transform: rotateX(180deg); 
+}
+
+.faq.title {
+    margin: 0 35px 0 0;
+}
+
+.faq-text {
+    margin: 30px 0 0;
+    display: none;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 0;
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    height: 30px;
+}
+
+.faq-toggle .fa-circle-xmark {
+    display: none;
+}
+
+.faq.active .fa-circle-xmark {
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-circle-chevron-down {
+    display: none; 
+}
