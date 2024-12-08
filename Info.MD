@@ -1,0 +1,1 @@
+This site can be used to select a random choice, for example = head or tales, the choices must be separted using a , making choice before , as a span which passes through the functions and randomly provides an selection. final result will be highlighted. 
