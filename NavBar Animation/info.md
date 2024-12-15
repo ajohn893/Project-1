@@ -1,0 +1,1 @@
+this is a navbar that has some cool animation, collapsing and expanding styled navbar which can be used an any websites or applications. 
