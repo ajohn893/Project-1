@@ -1,0 +1,2 @@
+This is an increment counter, which can be used in any websites or projects for counting stuff, in this project i used it to count the number of followers (like a poll) of certain fanbase. 
+The number can be changed as pleased (data-target) also it can be counted faster or slower by workinhg with (SetTimeout). 
